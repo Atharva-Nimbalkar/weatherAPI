@@ -13,7 +13,6 @@ app.post("/", function (req, res) {
     // console.log(req.body.cityName);
     //fetch data from external server
     const query = req.body.cityName;
-    // const apikey = "1c0be565740955ebd55a135468c77a8f";
     const apikey=process.env.Key;
     const unit = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apikey + "&units=" + unit;
