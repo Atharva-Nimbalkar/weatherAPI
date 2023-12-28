@@ -1,0 +1,4 @@
+/node_modules
+
+#our custom stuff
+.env
